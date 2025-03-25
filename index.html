@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+1<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,12 +9,12 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Contact Me</a></li>
-            <li>Medan, Indonesia</li>
+            <li><a href="#project-section">Project</a></li>
+            <li><a href="#contact-section">Contact Me</a></li>
+            <li><a href="#hero-section">Medan, Indonesia</a></li>
         </ul>
     </nav>
-    <section class="hero">
+    <section class="hero" id="hero-section">
         <p>Hi!, I'm</p>
         <img src="Images/Logo.png" alt="Mhd Tondi" class="logo">
         <div class="roles">
@@ -23,5 +23,63 @@
             <span>INTERIOR DESIGNER</span>
         </div>
     </section>
+    <section class="about">
+        <div class="about-image">
+            <img src="Images/About.jpg" alt="Street scene in black and white">
+        </div>
+        <div class="about-content">
+            <h1>ABOUT</h1>
+            <p>Hi!, I'm Mhd Tondi from Medan, Indonesia.</p>
+        </div>
+    </section>
+    <section class="project" id="project-section">
+        <div class="project-header">
+            <h1>PROJECT</h1>
+            <div class="dashed-line"></div>
+        </div>
+        
+        <div class="project-item">
+            <h2>01-GRAPHIC DESIGN</h2>
+            <div class="project-images">
+                <img src="Images/01-01.jpg" alt="GRAPHIC DESIGN">
+                <img src="Images/01-02.jpg" alt="GRAPHIC DESIGN">
+                <img src="Images/01-03.jpg" alt="GRAPHIC DESIGN">
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h2>02-UI DESIGN</h2>
+            <div class="project-images">
+                <img src="Images/02-01.jpg" alt="UI DESIGN">
+                <img src="Images/02-02.jpg" alt="UI DESIGN">
+                <img src="Images/02-03.jpg" alt="UI DESIGN">
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h2>03-INTERIOR DESIGN</h2>
+            <div class="project-images">
+                <img src="Images/03-01.jpg" alt="INTERIOR DESIGN">
+                <img src="Images/03-02.jpg" alt="INTERIOR DESIGN">
+                <img src="Images/03-03.jpg" alt="INTERIOR DESIGN">
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact-section">
+        <div class="contact-header">
+            <h1>CONTACT</h1>
+            <div class="dashed-line"></div>
+        </div>
+        <div class="contact-info">
+            <a href="https://instagram.com/apatheiiaa" target="_blank" class="contact-item">@apatheiiaa</a>
+            <a href="mailto:mailtondi@businessme.com" class="contact-item">mailtondi@businessme.com</a>
+        </div>
+    </section>
+    <!-- Modal for expanded image -->
+    <div class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="expandedImg">
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
